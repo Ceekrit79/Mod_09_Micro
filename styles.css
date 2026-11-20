@@ -1,18 +1,73 @@
-table {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th,td {
-  border: 1px solid black;
-  text-align: right;
-  padding: .2em .8em;
+* {
+  box-sizing: border-box;
 }
 
-th.center, td.center {
+body {
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma, sans-serif;
+  background-attachment: #161925;
+  color: #f4f6fb;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.leaderboard-wrapper {
+  text-align: center;
+  width: 100%;
+  max-width: 640px;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ff7b54;
+  font-size: 1.75;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  color: hwb(189 4% 61%);
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 0.98rem;
+}
+
+table {
+  width: 100%;
+  border: 2px solid #045c67;
+  border-collapse: collapse;
+  background-color: #1f2436;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+th,
+td {
+  border: 1px solid #2e354d;
+  text-align: right;
+  padding: 0.65em 1.1em;
+}
+
+th.center,
+td.center {
   text-align: center;
 }
 
+th.left,
+td.left {
+  text-align: left;
+}
+
 thead {
-  background-color: rgb(58, 202, 133);
-  color: white;
+  background-color: #2a9d8f;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #303854;
+  transition: background-color 0.2s ease;
 }

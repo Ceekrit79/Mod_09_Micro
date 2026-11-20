@@ -1,0 +1,21 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    text-align: right;
+    padding: .2em .8em;
+}
+
+th.center,
+td.center {
+    text-align: center;
+}
+
+thead {
+    background-color: rgb(58, 202, 133);
+    color: white;
+}
